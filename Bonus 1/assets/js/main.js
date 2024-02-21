@@ -1,36 +1,44 @@
 //console.log('Test');
 
-const ulElement = document.querySelector('.list')
+//const ulElement = document.querySelector('.list');
 let result;
+const ul = document.querySelector("ul.list");
+const li = document.createElement('li');
+
 
 for (let n = 1; n <= 100; n++) {
     //console.log(n); //generate numbers from 1 to 100
-    /*     const markUpListItem = `<li>${n}</li>`
-        console.log(markUpListItem);
-        ulElement.insertAdjacentHTML('beforeend', markUpListItem) */
 
     if (n % 3 == 0 && n % 5 == 0) {
         console.log('FizzBuzz'); //'FizzBuzz'
-        result = 'FizzBuzz'
-        const markUpListItem = `<li>${result}</li>`
-        ulElement.insertAdjacentHTML('beforeend', markUpListItem)
+        result = 'FizzBuzz';
+        li.append(result);
+        ul.append(li)
+        //const markUpListItem = `<li>${result}</li>`
+        //ulElement.insertAdjacentHTML('beforeend', markUpListItem)
 
     } else if (n % 3 == 0) {
         console.log('Fizz'); //'Fizz'
-        result = 'Fizz'
-        const markUpListItem = `<li>${result}</li>`
-        ulElement.insertAdjacentHTML('beforeend', markUpListItem)
+        result = 'Fizz';
+        li.append(result);
+        ul.append(li)
+        //const markUpListItem = `<li>${result}</li>`
+        //ulElement.insertAdjacentHTML('beforeend', markUpListItem)
 
     } else if (n % 5 == 0) {
         console.log('Buzz'); //'Buzz'
-        result = 'Buzz'
-        const markUpListItem = `<li>${result}</li>`
-        ulElement.insertAdjacentHTML('beforeend', markUpListItem)
+        result = 'Buzz';
+        li.append(result);
+        ul.append(li)
+        //const markUpListItem = `<li>${result}</li>`
+        //ulElement.insertAdjacentHTML('beforeend', markUpListItem)
 
     } else {
         console.log(n); //Number
-        const markUpListItem = `<li>${n}</li>`
-        ulElement.insertAdjacentHTML('beforeend', markUpListItem)
+        li.append(n);
+        ul.append(li)
+        //const markUpListItem = `<li>${n}</li>`
+        //ulElement.insertAdjacentHTML('beforeend', markUpListItem)
     }
 
 }
