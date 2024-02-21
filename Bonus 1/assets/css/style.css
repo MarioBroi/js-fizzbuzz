@@ -7,3 +7,44 @@
 .debug * {
     border: 1px dashed black;
 }
+
+h1 {
+    text-align: center;
+}
+
+.list {
+    width: 80%;
+    max-width: 880px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightcyan;
+        margin: 5px;
+        line-height: 100px;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .fizz {
+        color: orangered;
+    }
+
+    .buzz {
+        color: chartreuse;
+    }
+
+    .fizzbuzz {
+        color: darkmagenta;
+    }
+
+    .fizz,
+    .buzz,
+    .fizzbuzz {
+        text-transform: uppercase;
+    }
+}
